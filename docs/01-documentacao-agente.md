@@ -5,39 +5,40 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Ele registra os gastos do cliente e com base no seu limite de gastos, informados anteriormente, ele avisa o cliente se está chegando perto do limite, se atingiu o limite ou se ultrapassou o limite.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Ele entende os dados do clientes e seus gasto, analisa o que é obrigatório ser pago e o que pode ser supérfluo, e pode ajudar o cliente a decidir se realmente é interessante obter algum gasto no momento
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Pessoas que procuram ajuda para controlar seus gastos, sem cometer excessos desnecessário
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Kali
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+Ele ajuda a educar financeiramente o cliente, o fazendo refletir se naquele momento realmente pode haver um novo gasto e como trata-lo, ele é educativo, direto, não fica bajulando o cliente
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Como ele educa o cliente ele tem uma comunicação mais informal e acessível, como se fosse um amigo
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: "Opa! Eu sou o Kali como posso ajudar com suas finanças hoje?"
+- Confirmação: "Entendi! Deixa eu ver isso aqui para você."
+- Erro/Limitação: "Não tenho essa informação meu querido(a), mas posso ajudar com..."
+- Ajuda: "Entendo que você quer comprar isso ai, mas é mesmo necessário agora? Você disse que..."
 
 ---
 
@@ -59,10 +60,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Streamlit |
+| LLM | Ollama (Local) |
+| Base de Conhecimento | JSON/CSV com dados do cliente |
+| Validação | Checagem de alucinações |
 
 ---
 
@@ -70,12 +71,14 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] Agente só responde com base nos dados fornecidos
+- [ ] Respostas incluem fonte da informação
+- [ ] Quando não sabe, admite e pede ajuda ou vai atrás de aprender
+- [ ] Não faz recomendações de investimento
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- Não ajuda com investimentos
+- Não acessa dados bancários sensíveis (senhas, etc)
+- Não ordena o que deve ser feito
