@@ -8,7 +8,7 @@
   "reserva_emergencia_atual": 10000.00,
   "gastos": 2500,
   "contas": 1100
-  "sobra_mes": "renda_mensal" - "gasto"
+  "sobra_mes": "renda_mensal" - "gastos"
   "metas": [
     {
       "meta": "Completar reserva de emergência",
