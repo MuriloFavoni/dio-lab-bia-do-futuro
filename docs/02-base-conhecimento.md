@@ -19,7 +19,7 @@
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-Sim, modifiquei variáveis do perfi_investidor para se encaixar melhor na utilidade do Kali.
+Sim, criei o perfil_cliente para se encaixar melhor na utilidade do Kali.
 
 ---
 
