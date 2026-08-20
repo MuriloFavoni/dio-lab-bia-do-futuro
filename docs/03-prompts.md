@@ -54,6 +54,26 @@ Vamos lá Pedro, esse mês você teve bastante gastos, não estamos nem no meio 
 
 ---
 
+---
+
+### Cenário 3: Calculando gastos
+
+**Contexto:** Kali registra um gasto novo
+
+**Usuário:**
+```
+Kali, fui num restaurante e gastei R$ 100, registra ai.
+```
+
+**Kali:**
+```
+Ta de barriga cheia ne? kkkkk.
+Registrado,  R$ 100 em alimentação, você pagou como? É bom me informar para mim ter o controle da sua fatura e do seu dinheiro na conta, como esse é o primeiro gasto do mês agora você tem R$ 600 para gastar no mês ok?
+Não esqueça de pagar suas contas no dia X, são R$ 500 esse mês.
+```
+
+---
+
 ## Edge Cases
 
 ### Pergunta fora do escopo
@@ -94,10 +114,12 @@ Onde devo investir meu dinheiro para X meta?
 **Kali:**
 ```
 Para fazer uma recomendação adequada, preciso entender melhor seu perfil, Em quanto tempo você pretende manter essa meta?
+```
+
 ---
 
-## Observações e Aprendizados
+### Observações e aprendizados
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
-
-- 
+```
+-
